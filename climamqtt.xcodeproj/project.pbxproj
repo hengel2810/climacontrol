@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */; };
-		FE4B21981FFE4ADB0039A00F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21971FFE4ADB0039A00F /* ViewController.swift */; };
+		FE4B21981FFE4ADB0039A00F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21971FFE4ADB0039A00F /* MainViewController.swift */; };
 		FE4B219B1FFE4ADB0039A00F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B21991FFE4ADB0039A00F /* Main.storyboard */; };
 		FE4B219D1FFE4ADB0039A00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */; };
 		FE4B21A01FFE4ADB0039A00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		FE4B21921FFE4ADB0039A00F /* climamqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = climamqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE4B21971FFE4ADB0039A00F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE4B21971FFE4ADB0039A00F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE4B219A1FFE4ADB0039A00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4B219F1FFE4ADB0039A00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		FE4B21941FFE4ADB0039A00F /* climamqtt */ = {
 			isa = PBXGroup;
 			children = (
+				FE4B21C31FFE58560039A00F /* ViewController */,
 				FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */,
-				FE4B21971FFE4ADB0039A00F /* ViewController.swift */,
 				FE4B21991FFE4ADB0039A00F /* Main.storyboard */,
 				FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */,
 				FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				FE4B21B71FFE4ADC0039A00F /* Info.plist */,
 			);
 			path = climamqttUITests;
+			sourceTree = "<group>";
+		};
+		FE4B21C31FFE58560039A00F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B21971FFE4ADB0039A00F /* MainViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE4B21981FFE4ADB0039A00F /* ViewController.swift in Sources */,
+				FE4B21981FFE4ADB0039A00F /* MainViewController.swift in Sources */,
 				FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
