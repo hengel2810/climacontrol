@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var nominalTemperatureLabel: UILabel!
     @IBOutlet weak var tempSlider: UISlider!
     @IBOutlet weak var modeControl: UISegmentedControl!
+    @IBOutlet weak var fanControl: UISegmentedControl!
     @IBOutlet weak var paramterTextfield: UITextField!
     @IBOutlet weak var valueTextfield: UITextField!
     
@@ -47,6 +48,19 @@ class MainViewController: UIViewController {
                 print("Lüften")
             default:
                 print("Mode not supported")
+            }
+        }
+    }
+    @IBAction func fanChanged(_ sender: Any) {
+        if let segmentControl = sender as? UISegmentedControl {
+            if segmentControl.selectedSegmentIndex < 5 {
+                print("Fan \(segmentControl.selectedSegmentIndex + 1)")
+            }
+            else if segmentControl.selectedSegmentIndex == 5 {
+                print("Fan Auto")
+            }
+            else if segmentControl.selectedSegmentIndex == 6 {
+                print("Fan Aus")
             }
         }
     }

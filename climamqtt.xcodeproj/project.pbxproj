@@ -14,6 +14,7 @@
 		FE4B21A01FFE4ADB0039A00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */; };
 		FE4B21AB1FFE4ADB0039A00F /* climamqttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21AA1FFE4ADB0039A00F /* climamqttTests.swift */; };
 		FE4B21B61FFE4ADC0039A00F /* climamqttUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */; };
+		FE4B21C51FFE6C9D0039A00F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FE4B21B11FFE4ADC0039A00F /* climamqttUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = climamqttUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climamqttUITests.swift; sourceTree = "<group>"; };
 		FE4B21B71FFE4ADC0039A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FE4B21971FFE4ADB0039A00F /* MainViewController.swift */,
+				FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				FE4B21981FFE4ADB0039A00F /* MainViewController.swift in Sources */,
 				FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */,
+				FE4B21C51FFE6C9D0039A00F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
