@@ -29,7 +29,8 @@ class MQTTController: NSObject, CocoaMQTTDelegate {
     func sendParameterValue(parameter:String, value:String) {
         let message = "\(parameter)\(value)"
         print(message)
-        self.mqttClient.publish("singleParameter", withString: message)
+//        self.mqttClient.publish("singleParameter", withString: message)
+        self.mqttClient.publish("singleParameter", withString: message, qos: CocoaMQTTQOS.qos2, retained: false, dup: false)
     }
     
     //MARK: - CocoaMQTTDelegate

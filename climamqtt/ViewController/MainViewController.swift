@@ -46,6 +46,12 @@ class MainViewController: UITableViewController {
         }
         else {
             self.mqttController = MQTTController(mqttSettings: SettingsController.loadSettings()!)
+            self.tempSlider.isEnabled = true
+            self.modeControl.isEnabled = true
+            self.fanControl.isEnabled = true
+            self.paramterTextfield.isEnabled = true
+            self.valueTextfield.isEnabled = true
+            self.sendButton.isEnabled = true
         }
     }
 

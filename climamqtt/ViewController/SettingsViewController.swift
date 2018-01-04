@@ -91,6 +91,15 @@ class SettingsViewController: UITableViewController {
         print("###################################")
         SettingsController.save(settings: mqttSettings)
         
+        let alert = UIAlertController(title: "Gespeichert", message: "Die MQTT-Konfiguration wurde gespeichert.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            self.navigationController?.popViewController(animated: true)
+        })
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: {
+            
+        })
+        
 //        self.hostTextfield.resignFirstResponder()
 //        self.portTextfield.resignFirstResponder()
 //        self.usernameTextfield.resignFirstResponder()
