@@ -104,7 +104,7 @@ class MainViewController: UITableViewController {
                 value = 0
 //                print("Fan Aus")
             }
-            self.mqttController?.sendParameterValue(parameter: "198", value: "00\(value)")
+            self.mqttController?.sendParameterValue(parameter: "199", value: "00\(value)")
         }
     }
     
