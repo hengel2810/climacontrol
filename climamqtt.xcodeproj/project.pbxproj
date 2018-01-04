@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */; };
+		FE4B21981FFE4ADB0039A00F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21971FFE4ADB0039A00F /* ViewController.swift */; };
+		FE4B219B1FFE4ADB0039A00F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B21991FFE4ADB0039A00F /* Main.storyboard */; };
+		FE4B219D1FFE4ADB0039A00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */; };
+		FE4B21A01FFE4ADB0039A00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */; };
+		FE4B21AB1FFE4ADB0039A00F /* climamqttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21AA1FFE4ADB0039A00F /* climamqttTests.swift */; };
+		FE4B21B61FFE4ADC0039A00F /* climamqttUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE4B21A71FFE4ADB0039A00F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE4B218A1FFE4ADB0039A00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE4B21911FFE4ADB0039A00F;
+			remoteInfo = climamqtt;
+		};
+		FE4B21B21FFE4ADC0039A00F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE4B218A1FFE4ADB0039A00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE4B21911FFE4ADB0039A00F;
+			remoteInfo = climamqtt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE4B21921FFE4ADB0039A00F /* climamqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = climamqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE4B21971FFE4ADB0039A00F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE4B219A1FFE4ADB0039A00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE4B219F1FFE4ADB0039A00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE4B21A11FFE4ADB0039A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE4B21A61FFE4ADB0039A00F /* climamqttTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = climamqttTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4B21AA1FFE4ADB0039A00F /* climamqttTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climamqttTests.swift; sourceTree = "<group>"; };
+		FE4B21AC1FFE4ADC0039A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE4B21B11FFE4ADC0039A00F /* climamqttUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = climamqttUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climamqttUITests.swift; sourceTree = "<group>"; };
+		FE4B21B71FFE4ADC0039A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE4B218F1FFE4ADB0039A00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B21A31FFE4ADB0039A00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B21AE1FFE4ADC0039A00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE4B21891FFE4ADB0039A00F = {
+			isa = PBXGroup;
+			children = (
+				FE4B21941FFE4ADB0039A00F /* climamqtt */,
+				FE4B21A91FFE4ADB0039A00F /* climamqttTests */,
+				FE4B21B41FFE4ADC0039A00F /* climamqttUITests */,
+				FE4B21931FFE4ADB0039A00F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE4B21931FFE4ADB0039A00F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B21921FFE4ADB0039A00F /* climamqtt.app */,
+				FE4B21A61FFE4ADB0039A00F /* climamqttTests.xctest */,
+				FE4B21B11FFE4ADC0039A00F /* climamqttUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE4B21941FFE4ADB0039A00F /* climamqtt */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */,
+				FE4B21971FFE4ADB0039A00F /* ViewController.swift */,
+				FE4B21991FFE4ADB0039A00F /* Main.storyboard */,
+				FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */,
+				FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */,
+				FE4B21A11FFE4ADB0039A00F /* Info.plist */,
+			);
+			path = climamqtt;
+			sourceTree = "<group>";
+		};
+		FE4B21A91FFE4ADB0039A00F /* climamqttTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B21AA1FFE4ADB0039A00F /* climamqttTests.swift */,
+				FE4B21AC1FFE4ADC0039A00F /* Info.plist */,
+			);
+			path = climamqttTests;
+			sourceTree = "<group>";
+		};
+		FE4B21B41FFE4ADC0039A00F /* climamqttUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */,
+				FE4B21B71FFE4ADC0039A00F /* Info.plist */,
+			);
+			path = climamqttUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE4B21911FFE4ADB0039A00F /* climamqtt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4B21BA1FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqtt" */;
+			buildPhases = (
+				FE4B218E1FFE4ADB0039A00F /* Sources */,
+				FE4B218F1FFE4ADB0039A00F /* Frameworks */,
+				FE4B21901FFE4ADB0039A00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = climamqtt;
+			productName = climamqtt;
+			productReference = FE4B21921FFE4ADB0039A00F /* climamqtt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE4B21A51FFE4ADB0039A00F /* climamqttTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4B21BD1FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqttTests" */;
+			buildPhases = (
+				FE4B21A21FFE4ADB0039A00F /* Sources */,
+				FE4B21A31FFE4ADB0039A00F /* Frameworks */,
+				FE4B21A41FFE4ADB0039A00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE4B21A81FFE4ADB0039A00F /* PBXTargetDependency */,
+			);
+			name = climamqttTests;
+			productName = climamqttTests;
+			productReference = FE4B21A61FFE4ADB0039A00F /* climamqttTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE4B21B01FFE4ADC0039A00F /* climamqttUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4B21C01FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqttUITests" */;
+			buildPhases = (
+				FE4B21AD1FFE4ADC0039A00F /* Sources */,
+				FE4B21AE1FFE4ADC0039A00F /* Frameworks */,
+				FE4B21AF1FFE4ADC0039A00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE4B21B31FFE4ADC0039A00F /* PBXTargetDependency */,
+			);
+			name = climamqttUITests;
+			productName = climamqttUITests;
+			productReference = FE4B21B11FFE4ADC0039A00F /* climamqttUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE4B218A1FFE4ADB0039A00F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Henrik Engelbrink";
+				TargetAttributes = {
+					FE4B21911FFE4ADB0039A00F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FE4B21A51FFE4ADB0039A00F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE4B21911FFE4ADB0039A00F;
+					};
+					FE4B21B01FFE4ADC0039A00F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE4B21911FFE4ADB0039A00F;
+					};
+				};
+			};
+			buildConfigurationList = FE4B218D1FFE4ADB0039A00F /* Build configuration list for PBXProject "climamqtt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE4B21891FFE4ADB0039A00F;
+			productRefGroup = FE4B21931FFE4ADB0039A00F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE4B21911FFE4ADB0039A00F /* climamqtt */,
+				FE4B21A51FFE4ADB0039A00F /* climamqttTests */,
+				FE4B21B01FFE4ADC0039A00F /* climamqttUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE4B21901FFE4ADB0039A00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B21A01FFE4ADB0039A00F /* LaunchScreen.storyboard in Resources */,
+				FE4B219D1FFE4ADB0039A00F /* Assets.xcassets in Resources */,
+				FE4B219B1FFE4ADB0039A00F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B21A41FFE4ADB0039A00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B21AF1FFE4ADC0039A00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE4B218E1FFE4ADB0039A00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B21981FFE4ADB0039A00F /* ViewController.swift in Sources */,
+				FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B21A21FFE4ADB0039A00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B21AB1FFE4ADB0039A00F /* climamqttTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B21AD1FFE4ADC0039A00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B21B61FFE4ADC0039A00F /* climamqttUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE4B21A81FFE4ADB0039A00F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE4B21911FFE4ADB0039A00F /* climamqtt */;
+			targetProxy = FE4B21A71FFE4ADB0039A00F /* PBXContainerItemProxy */;
+		};
+		FE4B21B31FFE4ADC0039A00F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE4B21911FFE4ADB0039A00F /* climamqtt */;
+			targetProxy = FE4B21B21FFE4ADC0039A00F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE4B21991FFE4ADB0039A00F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE4B219A1FFE4ADB0039A00F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE4B219F1FFE4ADB0039A00F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE4B21B81FFE4ADC0039A00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE4B21B91FFE4ADC0039A00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE4B21BB1FFE4ADC0039A00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = climamqtt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eh.climamqtt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE4B21BC1FFE4ADC0039A00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = climamqtt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eh.climamqtt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE4B21BE1FFE4ADC0039A00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = climamqttTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eh.climamqttTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/climamqtt.app/climamqtt";
+			};
+			name = Debug;
+		};
+		FE4B21BF1FFE4ADC0039A00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = climamqttTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eh.climamqttTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/climamqtt.app/climamqtt";
+			};
+			name = Release;
+		};
+		FE4B21C11FFE4ADC0039A00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = climamqttUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eh.climamqttUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = climamqtt;
+			};
+			name = Debug;
+		};
+		FE4B21C21FFE4ADC0039A00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = climamqttUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eh.climamqttUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = climamqtt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE4B218D1FFE4ADB0039A00F /* Build configuration list for PBXProject "climamqtt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4B21B81FFE4ADC0039A00F /* Debug */,
+				FE4B21B91FFE4ADC0039A00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE4B21BA1FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqtt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4B21BB1FFE4ADC0039A00F /* Debug */,
+				FE4B21BC1FFE4ADC0039A00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE4B21BD1FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqttTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4B21BE1FFE4ADC0039A00F /* Debug */,
+				FE4B21BF1FFE4ADC0039A00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE4B21C01FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqttUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4B21C11FFE4ADC0039A00F /* Debug */,
+				FE4B21C21FFE4ADC0039A00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE4B218A1FFE4ADB0039A00F /* Project object */;
+}
