@@ -15,6 +15,7 @@
 		FE4B21AB1FFE4ADB0039A00F /* climamqttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21AA1FFE4ADB0039A00F /* climamqttTests.swift */; };
 		FE4B21B61FFE4ADC0039A00F /* climamqttUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */; };
 		FE4B21C51FFE6C9D0039A00F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */; };
+		FE4B21C71FFE78C80039A00F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21C61FFE78C80039A00F /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = climamqttUITests.swift; sourceTree = "<group>"; };
 		FE4B21B71FFE4ADC0039A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FE4B21C61FFE78C80039A00F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				FE4B219C1FFE4ADB0039A00F /* Assets.xcassets */,
 				FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */,
 				FE4B21A11FFE4ADB0039A00F /* Info.plist */,
+				FE4B21C61FFE78C80039A00F /* SettingsController.swift */,
 			);
 			path = climamqtt;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4B21C71FFE78C80039A00F /* SettingsController.swift in Sources */,
 				FE4B21981FFE4ADB0039A00F /* MainViewController.swift in Sources */,
 				FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */,
 				FE4B21C51FFE6C9D0039A00F /* SettingsViewController.swift in Sources */,
