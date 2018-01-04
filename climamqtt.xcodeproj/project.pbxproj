@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D82481CB61E6019A8170E35 /* Pods_climamqttTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D93941AB6CC070431B040ED /* Pods_climamqttTests.framework */; };
+		437398D3D6105B743C241D4E /* Pods_climamqttUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6F65DED371A5B00411C96E /* Pods_climamqttUITests.framework */; };
+		D5F18884F8CEF9D92C8E4AD2 /* Pods_climamqtt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEACC360A9E92F75C709025 /* Pods_climamqtt.framework */; };
 		FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */; };
 		FE4B21981FFE4ADB0039A00F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21971FFE4ADB0039A00F /* MainViewController.swift */; };
 		FE4B219B1FFE4ADB0039A00F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4B21991FFE4ADB0039A00F /* Main.storyboard */; };
@@ -16,6 +19,7 @@
 		FE4B21B61FFE4ADC0039A00F /* climamqttUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21B51FFE4ADC0039A00F /* climamqttUITests.swift */; };
 		FE4B21C51FFE6C9D0039A00F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */; };
 		FE4B21C71FFE78C80039A00F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21C61FFE78C80039A00F /* SettingsController.swift */; };
+		FE4B21C91FFEB8420039A00F /* MQTTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B21C81FFEB8420039A00F /* MQTTController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A6F65DED371A5B00411C96E /* Pods_climamqttUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_climamqttUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28BACADCE8A9C67EC153ABA4 /* Pods-climamqtt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-climamqtt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-climamqtt/Pods-climamqtt.debug.xcconfig"; sourceTree = "<group>"; };
+		34494AF05686264F65E34714 /* Pods-climamqttTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-climamqttTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-climamqttTests/Pods-climamqttTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CC966B7EDC348BECA01E35C /* Pods-climamqttTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-climamqttTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-climamqttTests/Pods-climamqttTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FEACC360A9E92F75C709025 /* Pods_climamqtt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_climamqtt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3838BD881D6C2DC6F6702B /* Pods-climamqtt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-climamqtt.release.xcconfig"; path = "Pods/Target Support Files/Pods-climamqtt/Pods-climamqtt.release.xcconfig"; sourceTree = "<group>"; };
+		9D93941AB6CC070431B040ED /* Pods_climamqttTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_climamqttTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED96AD86E92BBE735697091 /* Pods-climamqttUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-climamqttUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-climamqttUITests/Pods-climamqttUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D12C84A445586556B3D74C1C /* Pods-climamqttUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-climamqttUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-climamqttUITests/Pods-climamqttUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE4B21921FFE4ADB0039A00F /* climamqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = climamqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4B21951FFE4ADB0039A00F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE4B21971FFE4ADB0039A00F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +64,8 @@
 		FE4B21B71FFE4ADC0039A00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE4B21C41FFE6C9D0039A00F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FE4B21C61FFE78C80039A00F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		FE4B21C81FFEB8420039A00F /* MQTTController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTController.swift; sourceTree = "<group>"; };
+		FE4B21CB1FFEBE120039A00F /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F18884F8CEF9D92C8E4AD2 /* Pods_climamqtt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D82481CB61E6019A8170E35 /* Pods_climamqttTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437398D3D6105B743C241D4E /* Pods_climamqttUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C4B8CA2C359661B752DDB54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28BACADCE8A9C67EC153ABA4 /* Pods-climamqtt.debug.xcconfig */,
+				7E3838BD881D6C2DC6F6702B /* Pods-climamqtt.release.xcconfig */,
+				34494AF05686264F65E34714 /* Pods-climamqttTests.debug.xcconfig */,
+				4CC966B7EDC348BECA01E35C /* Pods-climamqttTests.release.xcconfig */,
+				D12C84A445586556B3D74C1C /* Pods-climamqttUITests.debug.xcconfig */,
+				AED96AD86E92BBE735697091 /* Pods-climamqttUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		61CDC1FE21E3645A17D74A44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B21CB1FFEBE120039A00F /* CocoaMQTT.framework */,
+				6FEACC360A9E92F75C709025 /* Pods_climamqtt.framework */,
+				9D93941AB6CC070431B040ED /* Pods_climamqttTests.framework */,
+				1A6F65DED371A5B00411C96E /* Pods_climamqttUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE4B21891FFE4ADB0039A00F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +127,8 @@
 				FE4B21A91FFE4ADB0039A00F /* climamqttTests */,
 				FE4B21B41FFE4ADC0039A00F /* climamqttUITests */,
 				FE4B21931FFE4ADB0039A00F /* Products */,
+				5C4B8CA2C359661B752DDB54 /* Pods */,
+				61CDC1FE21E3645A17D74A44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +152,7 @@
 				FE4B219E1FFE4ADB0039A00F /* LaunchScreen.storyboard */,
 				FE4B21A11FFE4ADB0039A00F /* Info.plist */,
 				FE4B21C61FFE78C80039A00F /* SettingsController.swift */,
+				FE4B21C81FFEB8420039A00F /* MQTTController.swift */,
 			);
 			path = climamqtt;
 			sourceTree = "<group>";
@@ -146,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE4B21BA1FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqtt" */;
 			buildPhases = (
+				ADDC232C9FDADB7568574EC5 /* [CP] Check Pods Manifest.lock */,
 				FE4B218E1FFE4ADB0039A00F /* Sources */,
 				FE4B218F1FFE4ADB0039A00F /* Frameworks */,
 				FE4B21901FFE4ADB0039A00F /* Resources */,
+				986383A371A6A6129A3B0435 /* [CP] Embed Pods Frameworks */,
+				E273CF704C498426B020A0BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE4B21BD1FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqttTests" */;
 			buildPhases = (
+				0A45BE43A7B44B6FDF13C388 /* [CP] Check Pods Manifest.lock */,
 				FE4B21A21FFE4ADB0039A00F /* Sources */,
 				FE4B21A31FFE4ADB0039A00F /* Frameworks */,
 				FE4B21A41FFE4ADB0039A00F /* Resources */,
+				899BB762E984CE0473A348B9 /* [CP] Embed Pods Frameworks */,
+				B6E584DB5BD592185BB4B613 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE4B21C01FFE4ADC0039A00F /* Build configuration list for PBXNativeTarget "climamqttUITests" */;
 			buildPhases = (
+				2D34BF8BFD658431EAC92029 /* [CP] Check Pods Manifest.lock */,
 				FE4B21AD1FFE4ADC0039A00F /* Sources */,
 				FE4B21AE1FFE4ADC0039A00F /* Frameworks */,
 				FE4B21AF1FFE4ADC0039A00F /* Resources */,
+				C5BABA9A887E9A1462B51698 /* [CP] Embed Pods Frameworks */,
+				56A82F82AAB44E58F99C3F2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +322,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A45BE43A7B44B6FDF13C388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-climamqttTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D34BF8BFD658431EAC92029 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-climamqttUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56A82F82AAB44E58F99C3F2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-climamqttUITests/Pods-climamqttUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		899BB762E984CE0473A348B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-climamqttTests/Pods-climamqttTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		986383A371A6A6129A3B0435 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-climamqtt/Pods-climamqtt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-climamqtt/Pods-climamqtt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADDC232C9FDADB7568574EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-climamqtt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E584DB5BD592185BB4B613 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-climamqttTests/Pods-climamqttTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5BABA9A887E9A1462B51698 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-climamqttUITests/Pods-climamqttUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E273CF704C498426B020A0BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-climamqtt/Pods-climamqtt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE4B218E1FFE4ADB0039A00F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +484,7 @@
 				FE4B21C71FFE78C80039A00F /* SettingsController.swift in Sources */,
 				FE4B21981FFE4ADB0039A00F /* MainViewController.swift in Sources */,
 				FE4B21961FFE4ADB0039A00F /* AppDelegate.swift in Sources */,
+				FE4B21C91FFEB8420039A00F /* MQTTController.swift in Sources */,
 				FE4B21C51FFE6C9D0039A00F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +649,7 @@
 		};
 		FE4B21BB1FFE4ADC0039A00F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28BACADCE8A9C67EC153ABA4 /* Pods-climamqtt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +664,7 @@
 		};
 		FE4B21BC1FFE4ADC0039A00F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3838BD881D6C2DC6F6702B /* Pods-climamqtt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +679,7 @@
 		};
 		FE4B21BE1FFE4ADC0039A00F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34494AF05686264F65E34714 /* Pods-climamqttTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +696,7 @@
 		};
 		FE4B21BF1FFE4ADC0039A00F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC966B7EDC348BECA01E35C /* Pods-climamqttTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +713,7 @@
 		};
 		FE4B21C11FFE4ADC0039A00F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D12C84A445586556B3D74C1C /* Pods-climamqttUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +729,7 @@
 		};
 		FE4B21C21FFE4ADC0039A00F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED96AD86E92BBE735697091 /* Pods-climamqttUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

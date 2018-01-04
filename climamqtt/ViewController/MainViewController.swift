@@ -18,6 +18,9 @@ class MainViewController: UITableViewController {
     @IBOutlet weak var valueTextfield: UITextField!
     @IBOutlet weak var sendButton: UIButton!
     
+    var mqttController:MQTTController?
+    var sliderTimer:Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nominalTemperature = NSNumber(value: self.tempSlider.value)
@@ -41,6 +44,9 @@ class MainViewController: UITableViewController {
             self.valueTextfield.isEnabled = false
             self.sendButton.isEnabled = false
         }
+        else {
+            self.mqttController = MQTTController(mqttSettings: SettingsController.loadSettings()!)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,44 +57,66 @@ class MainViewController: UITableViewController {
     @IBAction func nominalTemperatureChanged(_ sender: Any) {
         if let slider = sender as? UISlider {
             let nominalTemperature = NSNumber(value: slider.value)
+            self.sliderTimer?.invalidate()
+            self.sliderTimer = nil
+            self.sliderTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { (timer) in
+                self.mqttController?.sendParameterValue(parameter: "211", value: "0\(nominalTemperature.intValue)")
+            })
             self.nominalTemperatureLabel.text = "\(nominalTemperature.intValue)°C"
         }
     }
     
     @IBAction func modeChanged(_ sender: Any) {
         if let segmentControl = sender as? UISegmentedControl {
+            var value:Int = -1
             switch(segmentControl.selectedSegmentIndex) {
             case 0:
-                print("Heizen")
+                value = 5
+//                print("Heizen")
             case 1:
-                print("Kühlen")
+                value = 2
+//                print("Kühlen")
             case 2:
-                print("Auto")
+                value = 0
+//                print("Auto")
             case 3:
-                print("Lüften")
+                value = 4
+//                print("Lüften")
             default:
                 print("Mode not supported")
             }
+            self.mqttController?.sendParameterValue(parameter: "198", value: "00\(value)")
         }
     }
     
     @IBAction func fanChanged(_ sender: Any) {
         if let segmentControl = sender as? UISegmentedControl {
+            var value:Int = -1
             if segmentControl.selectedSegmentIndex < 5 {
-                print("Fan \(segmentControl.selectedSegmentIndex + 1)")
+                value = segmentControl.selectedSegmentIndex + 1
+//                print("Fan \(segmentControl.selectedSegmentIndex + 1)")
             }
             else if segmentControl.selectedSegmentIndex == 5 {
-                print("Fan Auto")
+                value = 6
+//                print("Fan Auto")
             }
             else if segmentControl.selectedSegmentIndex == 6 {
-                print("Fan Aus")
+                value = 0
+//                print("Fan Aus")
             }
+            self.mqttController?.sendParameterValue(parameter: "198", value: "00\(value)")
         }
     }
     
     @IBAction func sendParamterValue(_ sender: Any) {
         self.paramterTextfield.resignFirstResponder()
         self.valueTextfield.resignFirstResponder()
+        let parameter = self.paramterTextfield.text
+        let value = self.valueTextfield.text
+        if(parameter != nil && parameter!.count > 0 && value != nil && value!.count > 0) {
+            self.mqttController?.sendParameterValue(parameter: parameter!, value: value!)
+        }
+        
     }
     
 }

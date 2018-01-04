@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBR-mY-3kH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-840" y="160"/>
+            <point key="canvasLocation" x="-591" y="179"/>
         </scene>
         <!--ClimaControl-->
         <scene sceneID="p7S-Q1-fv2">
@@ -491,7 +491,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWU-li-cCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1337" y="179"/>
+            <point key="canvasLocation" x="1039" y="179"/>
         </scene>
     </scenes>
     <resources>
