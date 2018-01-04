@@ -56,7 +56,7 @@
                                         <color key="textColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20.5" minValue="16" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="RtP-Ke-7a9">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="16" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="RtP-Ke-7a9">
                                         <rect key="frame" x="6" y="37" width="347" height="30"/>
                                         <connections>
                                             <action selector="nominalTemperatureChanged:" destination="w26-NW-LyT" eventType="valueChanged" id="so9-sx-Gj7"/>

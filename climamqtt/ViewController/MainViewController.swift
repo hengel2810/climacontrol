@@ -18,8 +18,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.nominalTemperatureLabel.text = "\(self.tempSlider.value)°C"
+        let nominalTemperature = NSNumber(value: self.tempSlider.value)
+        self.nominalTemperatureLabel.text = "\(nominalTemperature.intValue)°C"
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +29,8 @@ class MainViewController: UIViewController {
     
     @IBAction func nominalTemperatureChanged(_ sender: Any) {
         if let slider = sender as? UISlider {
-            let nominalTemperature = String(format: "%.01f", slider.value)
-            self.nominalTemperatureLabel.text = "\(nominalTemperature)°C"
+            let nominalTemperature = NSNumber(value: slider.value)
+            self.nominalTemperatureLabel.text = "\(nominalTemperature.intValue)°C"
         }
     }
     
@@ -54,7 +54,6 @@ class MainViewController: UIViewController {
     @IBAction func sendParamterValue(_ sender: Any) {
         self.paramterTextfield.resignFirstResponder()
         self.valueTextfield.resignFirstResponder()
-        
     }
     
     @IBAction func openSettings(_ sender: Any) {
