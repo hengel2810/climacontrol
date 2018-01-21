@@ -17,6 +17,7 @@ class MainViewController: UITableViewController {
     @IBOutlet weak var paramterTextfield: UITextField!
     @IBOutlet weak var valueTextfield: UITextField!
     @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var mqttStatusView: UIView!
     
     var mqttController:MQTTController?
     var sliderTimer:Timer?
@@ -25,6 +26,7 @@ class MainViewController: UITableViewController {
         super.viewDidLoad()
         let nominalTemperature = NSNumber(value: self.tempSlider.value)
         self.nominalTemperatureLabel.text = "\(nominalTemperature.intValue)°C"
+        self.mqttStatusView.backgroundColor = UIColor(red:240/255.0, green: 52/255.0, blue: 52/255.0, alpha: 1.0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +47,18 @@ class MainViewController: UITableViewController {
             self.sendButton.isEnabled = false
         }
         else {
-            self.mqttController = MQTTController(mqttSettings: SettingsController.loadSettings()!)
+//            self.mqttController = MQTTController(mqttSettings: SettingsController.loadSettings()!)
+            self.mqttController = MQTTController(mqttSettings: SettingsController.loadSettings()!, statusChange: { (connected) in
+                print(connected)
+                DispatchQueue.main.async {
+                    if(connected) {
+                        self.mqttStatusView.backgroundColor = UIColor(red:46/255.0, green: 204/255.0, blue: 113/255.0, alpha: 1.0)
+                    }
+                    else {
+                        self.mqttStatusView.backgroundColor = UIColor(red:240/255.0, green: 52/255.0, blue: 52/255.0, alpha: 1.0)
+                    }
+                }
+            })
             self.tempSlider.isEnabled = true
             self.modeControl.isEnabled = true
             self.fanControl.isEnabled = true
@@ -122,7 +135,7 @@ class MainViewController: UITableViewController {
         if(parameter != nil && parameter!.count > 0 && value != nil && value!.count > 0) {
             self.mqttController?.sendParameterValue(parameter: parameter!, value: value!)
         }
-        
+
     }
     
 }

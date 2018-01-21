@@ -1,0 +1,6 @@
+framework module Pods_climamqttUITests {
+  umbrella header "Pods-climamqttUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

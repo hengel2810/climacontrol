@@ -305,6 +305,32 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ClimaControl" id="Faq-Ir-lWP">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="done" id="e6R-E1-ITc">
+                            <view key="customView" contentMode="scaleToFill" id="TEt-pd-ueu">
+                                <rect key="frame" x="16" y="5.5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-zf-dSH">
+                                        <rect key="frame" x="0.0" y="-10" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5be-Hr-1ZZ"/>
+                                            <constraint firstAttribute="width" constant="20" id="B7s-bP-INi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5xa-zf-dSH" firstAttribute="top" secondItem="TEt-pd-ueu" secondAttribute="top" constant="-10" id="Fpb-z2-Y7L"/>
+                                    <constraint firstItem="5xa-zf-dSH" firstAttribute="leading" secondItem="TEt-pd-ueu" secondAttribute="leading" id="rjM-ir-Etx"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="SettingsIcon" id="wYi-IQ-qku">
                             <connections>
                                 <segue destination="yvb-PG-MfV" kind="show" id="oJo-A6-a4p"/>
@@ -314,6 +340,7 @@
                     <connections>
                         <outlet property="fanControl" destination="SbF-Mx-Fu3" id="LOj-jI-UTQ"/>
                         <outlet property="modeControl" destination="OWl-9W-Z7L" id="7ae-uU-Ah7"/>
+                        <outlet property="mqttStatusView" destination="5xa-zf-dSH" id="HfQ-iF-ZbS"/>
                         <outlet property="nominalTemperatureLabel" destination="HUT-hr-fd8" id="z2i-7Q-dd9"/>
                         <outlet property="paramterTextfield" destination="lcI-s2-T9B" id="ZAF-Yx-FNR"/>
                         <outlet property="sendButton" destination="EdZ-Bq-TJT" id="g0h-zl-gRE"/>
