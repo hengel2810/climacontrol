@@ -377,7 +377,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     <connections>
                                                         <action selector="hostChanged:" destination="yvb-PG-MfV" eventType="editingChanged" id="ZR8-IO-6yj"/>
                                                     </connections>
@@ -405,7 +405,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     <connections>
                                                         <action selector="portChanged:" destination="yvb-PG-MfV" eventType="editingChanged" id="ESz-IZ-qBk"/>
                                                     </connections>
@@ -433,7 +433,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     <connections>
                                                         <action selector="usernameChanged:" destination="yvb-PG-MfV" eventType="editingChanged" id="tCo-xt-yRK"/>
                                                     </connections>
@@ -461,7 +461,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                     <connections>
                                                         <action selector="passwordChanged:" destination="yvb-PG-MfV" eventType="editingChanged" id="a65-R8-ckP"/>
                                                     </connections>
